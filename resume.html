@@ -5,101 +5,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RIZA GHOSH MITRA | Web Tech | Cert 4 Prog</title>
     <link rel="stylesheet" href="./assets/css/site.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
 <body class="bg-gray-200 flex flex-col min-h-screen">
 
-<header class="sticky top-0 flex justify-between p-10 mx-auto md:flex-row gap-2 bg-gray-800 text-gray-200 w-full relative">
+<header class="sticky top-0 flex justify-between p-4 bg-gray-800 text-gray-200 w-full">
     <section class="flex items-center">
-        <img src="assets/img/resume.png" alt="Logo" class="h-40 w" >
-        <h1 class="text-2xl ml-4">My Portfolio</h1>
+        <img src="assets/img/resume.png" alt="Logo" class="h-10 w-10 mr-4">
+        <h1 class="text-2xl">MY PORTFOLIO</h1>
     </section>
-    <nav class="absolute bottom-4 right-4"> <!-- Changed bottom-4 to right-4 -->
-        <ul class="flex">
-            <li class="mr-2"><a class="text-2xl" href="index.html">Home</a></li>
-            <li class="mr-2"><a class="text-2xl" href="phase-1/phase-1.html">Phase 1</a></li>
-            <li class="mr-2"><a class="text-2xl" href="phase-2/phase-2.html">Phase 2</a></li>
-            <li class="mr-2"><a class="text-2xl" href="phase-3/phase-3.html">Phase 3</a></li>
-            <li><a class="text-2xl" href="phase-4/phase-4.html">Phase 4</a></li>
+    <nav>
+        <ul class="flex space-x-4 text-4xl">
+            <li><a href="index.html" class="text-lg hover:underline">Home</a></li>
+            <li><a href="about.html" class="text-lg hover:underline">About</a></li>
+            <li><a href="projects.html" class="text-lg hover:underline">Projects</a></li>
+            <li><a href="mywork.html" class="text-lg hover:underline">My Work</a></li>
+            <li><a href="contact.html" class="text-lg hover:underline">Contact Me</a></li>
         </ul>
     </nav>
 </header>
 
-<main class="text-lg"> <!-- Increased font size -->
-    <section class="text-center p-4 my-8 border-2 border-black rounded-lg">
-        <h4 class="text-4xl font-bold uppercase">Resume</h4>
+<main class="flex-grow container mx-auto p-6">
+    <section class="text-center mb-8">
+        <h4 class="text-4xl font-bold uppercase border-b-2 border-gray-800 inline-block pb-2">Resume</h4>
     </section>
 
-    <!-- Introduction Section -->
     <section class="mb-8">
-        <p class="text-base mb-4 text-2xl">A motivated and passionate individual, looking to embark on my professional career. I have completed my Bachelors as well as Diploma in Electrical Engineering from India. Currently, I am pursuing my Certificate IV in Information Technology from TAFE. I instill confidence in others and approach new challenges with an open mind. I am always highly enthused and committed to learning and self-development so that I can consistently achieve better results.</p>
-        <hr class="my-8 border-black">
-        <p class="text-base mb-4 text-2xl text-right">Email: 20111569@tafe.wa.edu.au</p> <!-- Aligning address to the right -->
-        <p class="text-base mb-4 text-2xl text-right">Address: Hay street, WA 6004</p> <!-- Aligning address to the right -->
-        <hr class="my-8 border-black"> <!-- Horizontal line -->
+        <p class="text-xl mb-4">A motivated and passionate individual, looking to embark on my professional career. I have completed my Bachelors as well as Diploma in Electrical Engineering from India. Currently, I am pursuing my Certificate IV in Information Technology from TAFE. I instill confidence in others and approach new challenges with an open mind. I am always highly enthused and committed to learning and self-development so that I can consistently achieve better results.</p>
+        <hr class="border-t border-gray-400 my-4">
+        <p class="text-xl">Email: 20111569@tafe.wa.edu.au</p>
+        <p class="text-xl text-right">Address: Hay street, WA 6004</p>
+        <hr class="border-t border-gray-400 my-4">
     </section>
 
-    <!-- Education Section -->
-    <section class="max-w-4xl mx-auto px-4 border border-gray-300 rounded-lg shadow-lg p-6 mb-12">
-        <header class="text-4xl font-bold mb-4">Education</header>
-        <p class="text-base mb-4">
-            <span class="font-semibold">Certificate IV in Information Technology</span> | North Metropolitan TAFE | 07/2023 - Present<br>
-            <span class="text-lg">Courses: C#, Python, SQL</span><br>
-            <span class="text-lg">Perth, Australia</span>
-        </p>
-        <p class="text-base mb-4">
-            <span class="font-semibold">B.Tech in Electrical Engineering</span> | Siliguri Institute of Technology | 06/2012 - 05/2015<br>
-            <span class="text-lg">Completed in 2015 with DGPA 7.61</span><br>
-            <span class="text-lg">India</span>
-        </p>
-        <p class="text-base mb-4">
-            <span class="font-semibold">Diploma in Electrical Engineering</span> | Jalpaiguri Polytechnic Institute | 05/2009 - 05/2012<br>
-            <span class="text-lg">Completed in 2012 with 1st Class Distinction</span><br>
-            <span class="text-lg">India</span>
-        </p>
+    <section class="mb-8 bg-white shadow-md rounded-lg p-6">
+        <h5 class="text-2xl font-semibold mb-4"><i class="fas fa-graduation-cap"></i> Education</h5>
+        <p class="font-semibold">Certificate IV in Information Technology</p>
+        <p>North Metropolitan TAFE | 07/2023 - Present</p>
+        <p>Courses: C#, Python, SQL</p>
+        <p>Perth, Australia</p>
+
+        <p class="font-semibold mt-4">B.Tech in Electrical Engineering</p>
+        <p>Siliguri Institute of Technology | 06/2012 - 05/2015</p>
+        <p>Completed in 2015 with DGPA 7.61</p>
+        <p>India</p>
+
+        <p class="font-semibold mt-4">Diploma in Electrical Engineering</p>
+        <p>Jalpaiguri Polytechnic Institute | 05/2009 - 05/2012</p>
+        <p>Completed in 2012 with 1st Class Distinction</p>
+        <p>India</p>
     </section>
 
-    <!-- Skills Section -->
-    <section class="max-w-4xl mx-auto px-4 border border-gray-300 rounded-lg shadow-lg p-6 mb-12">
-        <header class="text-4xl font-bold mb-4">Skills</header>
-        <p class="text-base mb-4">
-            Adaptability, Quick Learner, Effective communication, Openness, Teamwork, Responsibility, Time management, Attention to detail, Electrical Engineer.
-        </p>
+    <section class="mb-8 bg-white shadow-md rounded-lg p-6">
+        <h5 class="text-2xl font-semibold mb-4"><i class="fas fa-tools"></i> Skills</h5>
+        <p>Adaptability, Quick Learner, Effective communication, Openness, Teamwork, Responsibility, Time management, Attention to detail, Electrical Engineer.</p>
     </section>
 
-    <!-- Work Permit Section -->
-    <section class="max-w-4xl mx-auto px-4 border border-gray-300 rounded-lg shadow-lg p-6 mb-12">
-        <header class="text-4xl font-bold mb-4">Work Permit</header>
-        <p class="text-base mb-4">
-            Permanent Resident.
-        </p>
+    <section class="mb-8 bg-white shadow-md rounded-lg p-6">
+        <h5 class="text-2xl font-semibold mb-4"><i class="fas fa-id-card"></i> Work Permit</h5>
+        <p>Permanent Resident.</p>
     </section>
 
-    <!-- Language Section -->
-    <section class="max-w-4xl mx-auto px-4 border border-gray-300 rounded-lg shadow-lg p-6 mb-12">
-        <header class="text-4xl font-bold mb-4">Language</header>
-        <p class="text-base mb-4">
-            English (Professional Working Proficiency), Bengali (Native or Bilingual Proficiency)
-        </p>
+    <section class="mb-8 bg-white shadow-md rounded-lg p-6">
+        <h5 class="text-2xl font-semibold mb-4"><i class="fas fa-language"></i> Language</h5>
+        <p>English (Professional Working Proficiency), Bengali (Native or Bilingual Proficiency)</p>
     </section>
 
-    <!-- Interest Section -->
-    <section class="max-w-4xl mx-auto px-4 border border-gray-300 rounded-lg shadow-lg p-6 mb-10">
-        <header class="text-4xl font-bold">Interest</header>
-        <p class="text-base mb-2">
-            Writing Poems, Travelling, Cooking, Singing, Organizing Picnics for Kids, Photography, Acting/Dancing
-        </p>
+    <section class="mb-10 bg-white shadow-md rounded-lg p-6">
+        <h5 class="text-2xl font-semibold mb-4"><i class="fas fa-heart"></i> Interest</h5>
+        <p>Writing Poems, Travelling, Cooking, Singing, Organizing Picnics for Kids, Photography, Acting/Dancing</p>
     </section>
 </main>
-<footer class="text-gray-400 bg-gray-800 body-font w-full flex items-center justify-between p-4 fixed bottom-0 left-0">
-    <section>
-        <img src="assets/img/resume.png" alt="Logo" class="h-40 w-10 size-4 w bottom-10">
-    </section>
-    <section class="text-center flex-grow">
-        <p class="text-2xl text-gray-400">Copyright 2024 Riza Ghosh Mitra. All rights reserved</p>
-    </section>
-    <section>
-        <img src="assets/img/copyright.png" alt="Another Image" class="h-10 float-left">
-    </section>
+
+<footer class="bg-gray-800 text-gray-400 body-font w-full flex items-center justify-between p-6">
+    <img src="assets/img/resume.png" alt="Logo" class="h-16">
+    <p class="text-center text-2xl flex-grow">Copyright 2024 Riza Ghosh Mitra. All rights reserved</p>
+    <div class="flex items-center">
+        <img src="assets/img/copyright.png" alt="Another Image" class="h-16">
+        <p class="ml-2">Copyright</p>
+    </div>
 </footer>
 
 </body>

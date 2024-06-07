@@ -5,56 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RIZA GHOSH MITRA | Web Tech | Cert 4 Prog</title>
     <link rel="stylesheet" href="./assets/css/site.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body class="bg-gray-200 flex flex-col min-h-screen">
-<header class="sticky top-0 flex justify-between p-1 mx-auto md:flex-row gap-2 bg-gray-800 text-gray-200 w-full relative">
+<body class="bg-customBlue flex flex-col min-h-screen">
+<header class="sticky top-0 flex justify-between p-4 bg-gray-800 text-gray-200 w-full">
     <section class="flex items-center">
-        <img src="assets/img/resume.png" alt="Logo" class="h-40 w" >
-        <h1 class="text-2xl ml-4">My Portfolio</h1>
+        <img src="assets/img/resume.png" alt="Logo" class="h-10 w-10 mr-4">
+        <h1 class="text-2xl">MY PORTFOLIO</h1>
     </section>
-    <nav id="desktop-menu" class="hidden md:flex md:items-center md:w-auto md:mt-0">
-        <ul class="flex flex-row md:space-x-6">
-            <li class="mr-2"><a class="text-4xl" href="index.html">Home</a></li>
-            <li class="mr-2"><a class="text-4xl" href="resume.html">Resume</a></li>
-            <li class="mr-2"><a class="text-4xl" href="projects.html">Projects</a></li>
-            <li class="mr-2"><a class="text-4xl" href="mywork.html">My work</a></li>
-            <li><a class="text-4xl" href="contact.html">Contacts</a></li>
+    <nav>
+        <ul class="flex space-x-4 text-4xl">
+            <li><a href="index.html" class="text-lg hover:underline">Home</a></li>
+            <li><a href="resume.html" class="text-lg hover:underline">Resume</a></li>
+            <li><a href="projects.html" class="text-lg hover:underline">Projects</a></li>
+            <li><a href="mywork.html" class="text-lg hover:underline">My Work</a></li>
+            <li><a href="contact.html" class="text-lg hover:underline">Contact Me</a></li>
         </ul>
     </nav>
 </header>
 
-<section>
-    <h4 class="text-4xl font-bold mb-8 text-center border-b-2 pb-4">About Me</h4>
-</section>
-<main class="content">
-    <section class="mb-8">
-        <header class="title">Introduction</header>
-        <p class="text">Professional Background: Experience in Electrical Engineering Background. I have developed expertise in web development skills and python. I am eager to bring my skills to new challenges and opportunities.</p>
+<main class="flex-grow container mx-auto p-6 bg-white shadow-md mt-6">
+    <section>
+        <h4 class="text-4xl font-bold mb-4 text-center border-b-4 border-blue-900 pb-4">About Me</h4>
     </section>
 
     <section class="mb-8">
-        <header class="title">Skills & Expertise</header>
-        <p class="text">Passions and Interest: Poem writing, designing, and singing are my soul's chosen languages. With words, I weave emotions; through design, I paint dreams; and with song, I echo the melody of my heart.</p>
+        <header class="text-xl font-bold mb-2">Introduction</header>
+        <p class="text-lg">I'm Riza Ghosh Mitra. This portfolio is a glimpse into my world—where creativity meets dedication.</p>
+    </section>
+
+    <section class="mb-8">
+        <header class="text-xl font-bold mb-2">Professional Background</header>
+        <p class="text-lg">Experience in Electrical Engineering Background.</p>
+    </section>
+
+    <section class="mb-8">
+        <header class="text-xl font-bold mb-2">Skills & Expertise</header>
+        <p class="text-lg">I have developed expertise in web development skills and Python. I am eager to bring my skills to new challenges and opportunities.</p>
+    </section>
+
+    <section class="mb-8">
+        <header class="text-xl font-bold mb-2">Passions and Interest</header>
+        <p class="text-lg">Poem writing, designing, and singing are my soul's chosen languages. With words, I weave emotions; through design, I paint dreams; and with song, I echo the melody of my heart.</p>
     </section>
 
     <section>
-        <header class="title">Achievements</header>
-        <p class="text">My journey has been adorned with achievements that reflect my diverse passions. As an engineer, I achieved distinction, marking the beginning of my academic success. Beyond academics, my talents in drawing and singing have earned me multiple prizes, celebrating my artistic expression. Moreover, my poetic endeavors found recognition as my work got published on a prestigious Bengali website, a testament to my creative voice resonating beyond borders.</p>
+        <header class="text-xl font-bold mb-2">Achievements</header>
+        <p class="text-lg">My journey has been adorned with achievements that reflect my diverse passions. As an engineer, I achieved distinction, marking the beginning of my academic success. Beyond academics, my talents in drawing and singing have earned me multiple prizes, celebrating my artistic expression. Moreover, my poetic endeavors found recognition as my work got published on a prestigious Bengali website, a testament to my creative voice resonating beyond borders.</p>
     </section>
 </main>
 
-<footer class="text-gray-400 bg-gray-800 body-font w-full flex items-center justify-between p-0 absolute bottom-0 left-0">
-    <section>
-        <img src="assets/img/resume.png" alt="Logo" class="h-40 w-10 size-4 w bottom-10">
-    </section>
-    <section class="text-center flex-grow">
-        <p class="text-2xl text-gray-400">Copyright 2024 Riza Ghosh Mitra. All rights reserved</p>
-    </section>
-    <section>
-        <img src="assets/img/copyright.png" alt="Another Image" class="h-10 float-left">
-    </section>
+<footer class="bg-gray-800 text-gray-400 flex justify-between items-center p-4 text-4xl">
+    <img src="assets/img/resume.png" alt="Logo" class="h-10">
+    <p class="text-center text-sm flex-grow">Copyright 2024 Riza Ghosh Mitra. All rights reserved</p>
+    <div class="flex items-center">
+        <img src="assets/img/copyright.png" alt="Copyright" class="h-12 mr-2">
+        <p class="text-sm">copyright</p>
+    </div>
 </footer>
-
 </body>
 </html>
-

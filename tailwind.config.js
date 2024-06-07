@@ -8,6 +8,9 @@ module.exports = {
   './contact.html',],
   theme: {
     extend: {},
+    colors: {
+      customBlue: '#5865f2',
+    },
   },
   plugins: [],
 }

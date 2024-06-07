@@ -5,82 +5,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RIZA GHOSH MITRA | Web Tech | Cert 4 Prog</title>
     <link rel="stylesheet" href="./assets/css/site.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body class="bg-gray-200 flex flex-col min-h-screen">
+<body class="bg-gray-100 flex flex-col min-h-screen">
 
-<header class="sticky top-0 flex justify-between p-28 mx-auto md:flex-row gap-2 bg-gray-800 text-gray-200 w-full relative">
+<header class="sticky top-0 flex justify-between items-center p-6 bg-gray-800 text-white w-full shadow-md">
     <section class="flex items-center">
-        <img src="assets/img/resume.png" alt="Logo" class="h-40 w">
-        <h1 class="text-2xl ml-4">My Portfolio</h1>
+        <img src="assets/img/resume.png" alt="Logo" class="h-16">
+        <h1 class="text-2xl ml-4 font-bold">My Portfolio</h1>
     </section>
-    <nav id="desktop-menu" class="hidden md:flex md:items-center md:w-auto md:mt-0">
-        <ul class="flex flex-row md:space-x-6">
-            <li class="mr-2"><a class="text-4xl" href="index.html">Home</a></li>
-            <li class="mr-2"><a class="text-4xl" href="about.html">About</a></li>
-            <li class="mr-2"><a class="text-4xl" href="resume.html">Resume</a></li>
-            <li class="mr-2"><a class="text-4xl" href="projects.html">Projects</a></li>
-            <li><a class="text-4xl" href="contact.html">Contacts</a></li>
+    <nav id="desktop-menu" class="hidden md:flex md:items-center md:w-auto">
+        <ul class="flex flex-row space-x-6">
+            <li><a class="text-lg hover:text-gray-300" href="index.html">Home</a></li>
+            <li><a class="text-lg hover:text-gray-300" href="about.html">About</a></li>
+            <li><a class="text-lg hover:text-gray-300" href="resume.html">Resume</a></li>
+            <li><a class="text-lg hover:text-gray-300" href="projects.html">Projects</a></li>
+            <li><a class="text-lg hover:text-gray-300" href="contact.html">Contacts</a></li>
         </ul>
     </nav>
 </header>
 
-<main class="text-gray-800">
-    <section class="text-center p-4 my-8 border border-black rounded-lg">
-        <h4 class="text-4xl font-bold uppercase">Projects Details</h4>
+<main class="flex-grow p-6 md:p-10 lg:p-16">
+    <section class="text-center p-4 my-8 bg-blue-100 border border-gray-200 rounded-lg shadow-sm">
+        <h4 class="text-2xl md:text-3xl lg:text-4xl font-bold uppercase">Projects Details</h4>
     </section>
 
-    <section class="max-w-4xl mx-auto px-4 border border-gray-300 rounded-lg shadow-lg p-6 mb-12">
-        <header class="text-4xl font-bold mb-4">1. Web-Tech Project Details</header>
-        <p class="text-xl mb-4">
-            Title: Personal Portfolio website.
-            The main objective of this is to create professional personal portfolio website that showcases my Skills,projects,and experice in job field.
-            Technology used:
-            Html 5,CSS3,Jvascript,TailwindCSS and for tools and libraries used Git and Github for version control and project hosting and Figma for designing
-            wireframes.
+    <section class="max-w-4xl mx-auto mb-12 bg-white border border-gray-200 rounded-lg shadow-lg p-6">
+        <header class="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">1. Web-Tech Project Details</header>
+        <p class="text-md md:text-lg lg:text-xl mb-4">
+            Title: Personal Portfolio website. The main objective of this project is to create a professional personal portfolio website that showcases my skills, projects, and experience in the job field.
+        </p>
+        <p class="text-md md:text-lg lg:text-xl mb-4">
+            Technology used: HTML5, CSS3, JavaScript, TailwindCSS, and for tools and libraries, I used Git and GitHub for version control and project hosting, and Figma for designing wireframes.
         </p>
     </section>
 
-    <section class="max-w-4xl mx-auto px-4 border border-gray-300 rounded-lg shadow-lg p-6 mb-12">
-        <header class="text-4xl font-bold mb-4">2. Python Project Details</header>
-        <p class="text-xl mb-4">
-            Tic-Tac Toe:
-            In my Python Tic Tac Toe project, I emphasized modularization for better code organization and maintenance. The project
-            comprises key modules: a main program for user interaction and coordination, a board module handling the game state and
-            display, a player module managing player input and validation, and a game logic module enforcing rules and determining
-            outcomes. An optional AI module can be added for an AI opponent. This modular approach enhances development
-            efficiency, ensures code clarity, and enables scalability, reflecting sound software engineering practices.
+    <section class="max-w-4xl mx-auto mb-12 bg-green-100 border border-gray-200 rounded-lg shadow-lg p-6">
+        <header class="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">2. Python Project Details</header>
+        <p class="text-md md:text-lg lg:text-xl mb-4">
+            Tic-Tac Toe: In my Python Tic Tac Toe project, I emphasized modularization for better code organization and maintenance. The project comprises key modules: a main program for user interaction and coordination, a board module handling the game state and display, a player module managing player input and validation, and a game logic module enforcing rules and determining outcomes. An optional AI module can be added for an AI opponent. This modular approach enhances development efficiency, ensures code clarity, and enables scalability, reflecting sound software engineering practices.
         </p>
-        <p class="text-xl mb-4">
-            <br> . Open source project on weather Forcast- In my open-source weather forecast project developed in Python, I aimed to provide an accessible
-            and comprehensive solution for retrieving weather data. The project leverages object-oriented programming principles to enhance flexibility
-            and maintainability. Core functionalities are encapsulated into modular classes, such as a weather data retrieval module responsible for
-            fetching data from APIs, a data processing module for parsing and formatting the retrieved information, and a user interface module for
-            presenting weather forecasts in a user-friendly manner. By adopting an open-source approach, the project encourages collaboration and
-            contributions from the community, fostering continuous improvement and innovation. This initiative not only democratizes access to weather
-            information but also serves as a valuable learning resource for aspiring developers interested in Python programming and data manipulation </br>  </p>
+        <p class="text-md md:text-lg lg:text-xl mb-4">
+            Open source project on weather Forecast: In my open-source weather forecast project developed in Python, I aimed to provide an accessible and comprehensive solution for retrieving weather data. The project leverages object-oriented programming principles to enhance flexibility and maintainability. Core functionalities are encapsulated into modular classes, such as a weather data retrieval module responsible for fetching data from APIs, a data processing module for parsing and formatting the retrieved information, and a user interface module for presenting weather forecasts in a user-friendly manner. By adopting an open-source approach, the project encourages collaboration and contributions from the community, fostering continuous improvement and innovation. This initiative not only democratizes access to weather information but also serves as a valuable learning resource for aspiring developers interested in Python programming and data manipulation.
+        </p>
     </section>
-    <section class="max-w-4xl mx-auto px-4 border-2  rounded-lg shadow-lg p-6 mb-12">
-        <header class="text-4xl font-bold mb-4">3. C# Projects:-</header>
-        <p class="text-xl mb-4">
-            <br> Recruitment Agency WPF Application:  India  Developed a WPF application with C# to cater  basic needs of a Recruitment agency.
-            This  enabled contractors to register themselves to  queue. also managers could assign job to  contractors.  </br>
-            <br> Lottery Application : Developed a lottery application which caters a  basic functionalities of a lucky draw using C#   </br>
-            <br> Create A Relation Database using SQL:  Design and implement a relational database to  manage employee details of a company using  Store
-            procedures and Views.
-            Calculator:  Used python to create a simple calculator </br>
+
+    <section class="max-w-4xl mx-auto mb-12 bg-yellow-100 border border-gray-200 rounded-lg shadow-lg p-6">
+        <header class="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">3. C# Projects</header>
+        <p class="text-md md:text-lg lg:text-xl mb-4">
+            Recruitment Agency WPF Application: Developed a WPF application with C# to cater to the basic needs of a Recruitment agency. This enabled contractors to register themselves to a queue, and managers could assign jobs to contractors.
+        </p>
+        <p class="text-md md:text-lg lg:text-xl mb-4">
+            Lottery Application: Developed a lottery application which caters to the basic functionalities of a lucky draw using C#.
+        </p>
+        <p class="text-md md:text-lg lg:text-xl mb-4">
+            Create A Relational Database using SQL: Designed and implemented a relational database to manage employee details of a company using stored procedures and views.
+        </p>
+        <p class="text-md md:text-lg lg:text-xl mb-4">
+            Calculator: Used Python to create a simple calculator.
         </p>
     </section>
 </main>
-<footer class="text-gray-400 bg-gray-800 body-font w-full flex items-center justify-between p-28 fixed bottom-0 left-0">
-    <section>
-        <img src="assets/img/resume.png" alt="Logo" class="h-40 w-10 size-4 w bottom-10">
+
+<footer class="text-gray-400 bg-gray-800 w-full flex items-center justify-between p-4 md:p-6 lg:p-8">
+    <section class="flex items-center">
+        <img src="assets/img/resume.png" alt="Logo" class="h-10">
     </section>
     <section class="text-center flex-grow">
-        <p class="text-2xl text-gray-400">Copyright 2024 Riza Ghosh Mitra. All rights reserved</p>
+        <p class="text-sm md:text-lg lg:text-xl">&copy; 2024 Riza Ghosh Mitra. All rights reserved</p>
     </section>
-    <section>
-        <img src="assets/img/copyright.png" alt="Another Image" class="h-10 float-left">
+    <section class="flex items-center">
+        <img src="assets/img/copyright.png" alt="Another Image" class="h-4 md:h-6 lg:h-8">
+        <p class="text-sm md:text-lg lg:text-xl ml-4">Copyright</p>
     </section>
 </footer>
+
 </body>
 </html>
