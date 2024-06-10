@@ -13,8 +13,22 @@
         <img src="assets/img/resume.png" alt="Logo" class="h-10 w-10 mr-4">
         <h1 class="text-2xl">MY PORTFOLIO</h1>
     </section>
-    <nav>
+    <!-- Hamburger menu button -->
+    <button id="menu-toggle" class="block md:hidden text-4xl mr-4">
+        <img src="assets/img/hamburger.png" alt="Menu" class="h-10 w-10">
+    </button>
+    <nav id="desktop-menu" class="hidden md:flex">
         <ul class="flex space-x-4 text-4xl">
+            <li><a href="index.html" class="text-lg hover:underline">Home</a></li>
+            <li><a href="resume.html" class="text-lg hover:underline">Resume</a></li>
+            <li><a href="projects.html" class="text-lg hover:underline">Projects</a></li>
+            <li><a href="mywork.html" class="text-lg hover:underline">My Work</a></li>
+            <li><a href="contact.html" class="text-lg hover:underline">Contact Me</a></li>
+        </ul>
+    </nav>
+    <!-- Mobile menu -->
+    <nav id="menu" class="mobile-menu hidden md:hidden">
+        <ul class="flex flex-col space-y-4 text-4xl">
             <li><a href="index.html" class="text-lg hover:underline">Home</a></li>
             <li><a href="resume.html" class="text-lg hover:underline">Resume</a></li>
             <li><a href="projects.html" class="text-lg hover:underline">Projects</a></li>
@@ -60,8 +74,9 @@
     <p class="text-center text-sm flex-grow">Copyright 2024 Riza Ghosh Mitra. All rights reserved</p>
     <div class="flex items-center">
         <img src="assets/img/copyright.png" alt="Copyright" class="h-12 mr-2">
-        <p class="text-sm">copyright</p>
+        <p class="text-sm">Copyright</p>
     </div>
 </footer>
+<script src="assets/js/about.js"></script>
 </body>
 </html>

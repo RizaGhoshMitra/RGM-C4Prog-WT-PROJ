@@ -9,18 +9,32 @@
 </head>
 <body class="bg-gray-200 flex flex-col min-h-screen">
 
-<header class="sticky top-0 flex justify-between p-4 bg-gray-800 text-gray-200 w-full">
+<header class="sticky top-0 flex justify-between p-4 bg-gray-800 text-gray-200 w-full shadow-md">
     <section class="flex items-center">
         <img src="assets/img/resume.png" alt="Logo" class="h-10 w-10 mr-4">
         <h1 class="text-2xl">MY PORTFOLIO</h1>
     </section>
-    <nav>
-        <ul class="flex space-x-4 text-4xl">
-            <li><a href="index.html" class="text-lg hover:underline">Home</a></li>
-            <li><a href="about.html" class="text-lg hover:underline">About</a></li>
-            <li><a href="projects.html" class="text-lg hover:underline">Projects</a></li>
-            <li><a href="mywork.html" class="text-lg hover:underline">My Work</a></li>
-            <li><a href="contact.html" class="text-lg hover:underline">Contact Me</a></li>
+    <!-- Hamburger menu button -->
+    <button id="menu-toggle" class="block md:hidden text-4xl mr-4">
+        <img src="assets/img/hamburger.png" alt="Menu" class="h-10 w-10">
+    </button>
+    <nav id="desktop-menu" class="hidden md:flex md:items-center md:w-auto">
+        <ul class="flex space-x-4 text-lg">
+            <li><a href="index.html" class="hover:underline">Home</a></li>
+            <li><a href="about.html" class="hover:underline">About</a></li>
+            <li><a href="projects.html" class="hover:underline">Projects</a></li>
+            <li><a href="mywork.html" class="hover:underline">My Work</a></li>
+            <li><a href="contact.html" class="hover:underline">Contact Me</a></li>
+        </ul>
+    </nav>
+    <!-- Mobile menu -->
+    <nav id="mobile-ham" class="hidden md:hidden">
+        <ul class="flex flex-col space-y-4 text-lg">
+            <li><a href="index.html" class="hover:underline">Home</a></li>
+            <li><a href="about.html" class="hover:underline">About</a></li>
+            <li><a href="projects.html" class="hover:underline">Projects</a></li>
+            <li><a href="mywork.html" class="hover:underline">My Work</a></li>
+            <li><a href="contact.html" class="hover:underline">Contact Me</a></li>
         </ul>
     </nav>
 </header>
@@ -79,12 +93,13 @@
 
 <footer class="bg-gray-800 text-gray-400 body-font w-full flex items-center justify-between p-6">
     <img src="assets/img/resume.png" alt="Logo" class="h-16">
-    <p class="text-center text-2xl flex-grow">Copyright 2024 Riza Ghosh Mitra. All rights reserved</p>
+    <p class="text-center text-2xl flex-grow">&copy; 2024 Riza Ghosh Mitra. All rights reserved</p>
     <div class="flex items-center">
         <img src="assets/img/copyright.png" alt="Another Image" class="h-16">
         <p class="ml-2">Copyright</p>
     </div>
 </footer>
 
+<script src="./assets/js/resume.js"></script>
 </body>
 </html>

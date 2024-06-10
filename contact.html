@@ -14,13 +14,27 @@
         <img src="assets/img/resume.png" alt="Logo" class="h-10 w-10">
         <h1 class="text-xl ml-2">My Portfolio</h1>
     </section>
-    <nav class="hidden md:flex md:items-center">
+    <!-- Hamburger menu button -->
+    <button id="menu-toggle" class="block md:hidden text-4xl">
+        <img src="assets/img/hamburger.png" alt="Menu" class="h-10 w-10">
+    </button>
+    <nav id="desktop-menu" class="hidden md:flex md:items-center">
         <ul class="flex space-x-4">
             <li><a class="text-lg" href="index.html">Home</a></li>
             <li><a class="text-lg" href="about.html">About</a></li>
             <li><a class="text-lg" href="resume.html">Resume</a></li>
             <li><a class="text-lg" href="projects.html">Projects</a></li>
             <li><a class="text-lg" href="mywork.html">My Work</a></li>
+        </ul>
+    </nav>
+    <!-- Mobile menu -->
+    <nav id="mobile-menu" class="hidden md:hidden">
+        <ul class="flex flex-col space-y-4 text-lg">
+            <li><a href="index.html" class="hover:underline">Home</a></li>
+            <li><a href="about.html" class="hover:underline">About</a></li>
+            <li><a href="resume.html" class="hover:underline">Resume</a></li>
+            <li><a href="projects.html" class="hover:underline">Projects</a></li>
+            <li><a href="mywork.html" class="hover:underline">My Work</a></li>
         </ul>
     </nav>
 </header>
@@ -53,7 +67,7 @@
         <img src="assets/img/resume.png" alt="Logo" class="h-10">
     </section>
     <section class="text-center flex-grow">
-        <p class="text-lg text-gray-400">Copyright 2024 Riza Ghosh Mitra. All rights reserved</p>
+        <p class="text-lg text-gray-400">&copy; 2024 Riza Ghosh Mitra. All rights reserved</p>
     </section>
     <section class="flex items-center">
         <img src="assets/img/copyright.png" alt="Another Image" class="h-8 w-8 mr-2">
@@ -61,5 +75,6 @@
     </section>
 </footer>
 
+<script src="./assets/js/contact.js"></script>
 </body>
 </html>

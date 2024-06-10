@@ -4,71 +4,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Riza Ghosh Mitra | Web Tech | Cert 4 Prog</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/project.css">
 </head>
-<body>
+<body class="bg-gray-200 flex flex-col min-h-screen">
 
-<header class="header">
-    <section class="logo-section">
-        <img src="assets/img/resume.png" alt="Logo" class="logo-img">
-        <h1 class="site-title">My Portfolio</h1>
+<header class="sticky top-0 flex justify-between items-center p-4 bg-gray-800 text-gray-200 shadow-md">
+    <section class="flex items-center">
+        <img src="assets/img/resume.png" alt="Logo" class="h-10 w-10">
+        <h1 class="text-xl ml-2">My Portfolio</h1>
     </section>
-    <nav id="desktop-menu" class="nav">
-        <ul class="nav-list">
-            <li><a class="nav-link" href="about.html">About</a></li>
-            <li><a class="nav-link" href="resume.html">Resume</a></li>
-            <li><a class="nav-link" href="mywork.html">My Work</a></li>
-            <li><a class="nav-link" href="contact.html">Contact me</a></li>
+    <!-- Hamburger menu button -->
+    <button id="menu-toggle" class="block md:hidden">
+        <img src="assets/img/hamburger.png" alt="Menu" class="h-10 w-10">
+    </button>
+    <nav id="desktop-menu" class="hidden md:flex space-x-4">
+        <ul class="flex space-x-4 text-lg">
+            <li><a href="about.html" class="hover:underline">About</a></li>
+            <li><a href="resume.html" class="hover:underline">Resume</a></li>
+            <li><a href="mywork.html" class="hover:underline">My Work</a></li>
+            <li><a href="contact.html" class="hover:underline">Contact me</a></li>
+        </ul>
+    </nav>
+    <!-- Mobile menu -->
+    <nav id="mobile-hamburger" class="hidden flex-col space-y-4 text-lg">
+        <ul class="flex flex-col space-y-4">
+            <li><a href="about.html" class="hover:underline">About</a></li>
+            <li><a href="resume.html" class="hover:underline">Resume</a></li>
+            <li><a href="mywork.html" class="hover:underline">My Work</a></li>
+            <li><a href="contact.html" class="hover:underline">Contact me</a></li>
         </ul>
     </nav>
 </header>
 
-<main class="main-content">
-    <section class="intro-section">
-        <h2 class="intro-title">Project</h2>
+<main class="flex-grow container mx-auto p-6">
+    <section class="text-center mb-8">
+        <h2 class="text-4xl font-bold uppercase border-b-2 border-gray-800 inline-block pb-2">Project</h2>
     </section>
 
-    <section class="project-section">
-        <header class="project-header">1. web-Technology:-</header>
-        <p class="project-description">
-            My Portfolio Project
-        </p>
+    <section class="mb-8 bg-white shadow-md rounded-lg p-6">
+        <header class="text-2xl font-semibold mb-4">1. Web-Technology:</header>
+        <p class="text-lg">My Portfolio Project</p>
     </section>
 
-    <section class="project-section">
-        <header class="project-header">2. Python:-</header>
-        <p class="project-description">
-        <ul>
+    <section class="mb-8 bg-white shadow-md rounded-lg p-6">
+        <header class="text-2xl font-semibold mb-4">2. Python:</header>
+        <ul class="text-lg list-disc list-inside">
             <li>Tic-tac-toe</li>
             <li>Open source project on weather</li>
         </ul>
-        </p>
     </section>
 
-    <section class="project-section">
-        <header class="project-header">3. C# Projects:-</header>
-        <p class="project-description">
-        <ul>
+    <section class="mb-8 bg-white shadow-md rounded-lg p-6">
+        <header class="text-2xl font-semibold mb-4">3. C# Projects:</header>
+        <ul class="text-lg list-disc list-inside">
             <li>Lottery Application</li>
             <li>Contractor Project</li>
             <li>Weather Mobile Application</li>
         </ul>
-        </p>
     </section>
 </main>
 
-<footer class="footer">
-    <section class="footer-logo-section">
-        <img src="assets/img/resume.png" alt="Logo" class="footer-logo-img">
+<footer class="bg-gray-800 text-gray-400 w-full flex items-center justify-between p-4">
+    <section class="flex items-center">
+        <img src="assets/img/resume.png" alt="Logo" class="h-10">
     </section>
-    <section class="footer-text-section">
-        <p class="footer-text">&copy; 2024 Riza Ghosh Mitra. All rights reserved.</p>
+    <section class="text-center flex-grow">
+        <p class="text-lg">&copy; 2024 Riza Ghosh Mitra. All rights reserved.</p>
     </section>
-    <section class="footer-logo-section">
-        <p>Copyright</p>
-        <img src="assets/img/copyright.png" alt="Copyright Logo" class="footer-copyright-img">
+    <section class="flex items-center">
+        <img src="assets/img/copyright.png" alt="Copyright" class="h-8 w-8 mr-2">
+        <p class="text-lg">Copyright</p>
     </section>
 </footer>
 
+<script src="./assets/js/project.js"></script>
 </body>
 </html>

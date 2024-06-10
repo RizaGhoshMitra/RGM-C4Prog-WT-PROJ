@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RIZA GHOSH MITRA | Web Tech | Cert 4 Prog</title>
+    <title>Riza Ghosh Mitra | Web Tech | Cert 4 Prog</title>
     <link rel="stylesheet" href="./assets/css/site.css">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
@@ -14,6 +14,10 @@
         <img src="assets/img/resume.png" alt="Logo" class="h-16">
         <h1 class="text-2xl ml-4 font-bold">My Portfolio</h1>
     </section>
+    <!-- Hamburger menu button -->
+    <button id="menu-toggle" class="block md:hidden text-4xl mr-4">
+        <img src="assets/img/hamburger.png" alt="Menu" class="h-10 w-10">
+    </button>
     <nav id="desktop-menu" class="hidden md:flex md:items-center md:w-auto">
         <ul class="flex flex-row space-x-6">
             <li><a class="text-lg hover:text-gray-300" href="index.html">Home</a></li>
@@ -21,6 +25,16 @@
             <li><a class="text-lg hover:text-gray-300" href="resume.html">Resume</a></li>
             <li><a class="text-lg hover:text-gray-300" href="projects.html">Projects</a></li>
             <li><a class="text-lg hover:text-gray-300" href="contact.html">Contacts</a></li>
+        </ul>
+    </nav>
+    <!-- Mobile menu -->
+    <nav id="mobile-menu" class="hidden md:hidden">
+        <ul class="flex flex-col space-y-4 text-lg">
+            <li><a href="index.html" class="hover:underline">Home</a></li>
+            <li><a href="about.html" class="hover:underline">About</a></li>
+            <li><a href="resume.html" class="hover:underline">Resume</a></li>
+            <li><a href="projects.html" class="hover:underline">Projects</a></li>
+            <li><a href="contact.html" class="hover:underline">Contacts</a></li>
         </ul>
     </nav>
 </header>
@@ -72,7 +86,7 @@
         <img src="assets/img/resume.png" alt="Logo" class="h-10">
     </section>
     <section class="text-center flex-grow">
-        <p class="text-sm md:text-lg lg:text-xl">&copy; 2024 Riza Ghoshh Mitra. All rights reserved</p>
+        <p class="text-sm md:text-lg lg:text-xl">&copy; 2024 Riza Ghosh Mitra. All rights reserved</p>
     </section>
     <section class="flex items-center">
         <img src="assets/img/copyright.png" alt="Another Image" class="h-4 md:h-6 lg:h-8">
@@ -80,5 +94,6 @@
     </section>
 </footer>
 
+<script src="./assets/js/mywork.js"></script>
 </body>
 </html>

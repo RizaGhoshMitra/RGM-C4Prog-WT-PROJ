@@ -1,3 +1,4 @@
+/* Main styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -105,6 +106,14 @@ main p {
 
     #desktop-menu {
         display: none;
+    }
+
+    .mobile-menu {
+        display: none;
+    }
+
+    .mobile-menu.show {
+        display: block;
     }
 
     .mobile-menu ul {
